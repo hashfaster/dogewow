@@ -1,4 +1,4 @@
-# Dogecoin Core [DOGE, Ð]
+# Dogewow [DOGE, Ð]
 ==========================
 
 ![Dogecoin](http://static.tumblr.com/ppdj5y9/Ae9mxmxtp/300coin.png)
