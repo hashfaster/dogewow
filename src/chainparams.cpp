@@ -123,7 +123,7 @@ public:
         //     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73)
         //     CTxOut(nValue=50.00000000, scriptPubKey=0x5F1DF16B2B704C8A578D0B)
         //   vMerkleTree: 4a5e1e
-        const char* pszTimestamp = "Nintondo";
+        const char* pszTimestamp = "Don't Wait on Bitcoin";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -134,9 +134,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1386325540;
+        genesis.nTime    = 1544114714;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 99943;
+        genesis.nNonce   = 0;
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691"));
@@ -211,15 +211,15 @@ public:
         strDataDir = "testnet3";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1391503289;
-        genesis.nNonce = 997879;
+        genesis.nTime = 1544114714;
+        genesis.nNonce = 0;
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0xbb0a78264637406b6360aad926284d544d7049f45189db5664f3c4d07350559e"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("testdoge.lionservers.de", "testdoge-seed.lionservers.de"));
-        vSeeds.push_back(CDNSSeedData("lionservers.de", "testdoge-seed-static.lionservers.de"));
+        vSeeds.push_back(CDNSSeedData("stestdoge.lionservers.de", "tesstdoge-seed.lionservers.de"));
+        vSeeds.push_back(CDNSSeedData("lsionservers.de", "testsdoge-seed-static.lionservers.de"));
 
         // Boost sucks, and should not be used. Workaround for Boost not being compatible with C++11;
         
